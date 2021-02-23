@@ -1,0 +1,8 @@
+- syntax parsers
+  A program that reads your code and determines what is does and if its grammer is valid.
+  Your code isn't magic. Someone else wrote a program to translate it for the computer.
+  Compilers do this syntax parsing process.
+- execution context
+  global object and this
+  difference between browser and node.js
+- lexical environments
