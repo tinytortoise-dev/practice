@@ -19,7 +19,7 @@ function same_v1(arr1, arr2) {
     if (idx == -1) {
       return false;
     }
-    arr2.splice(idx, 1);
+    arr2.splice(idx, 1); // remove 1 element at index -> appendix
   }
   return true;
 }
@@ -59,3 +59,16 @@ console.log(same_v1([1,2,1], [4,4,1]) == false);
 console.log(same_v2([1,2,3], [4, 1, 9]) == true);
 console.log(same_v2([1,2,3], [1, 9]) == false);
 console.log(same_v2([1,2,1], [4,4,1]) == false);
+
+/* appendix
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at index 1
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May');
+// replaces 1 element at index 4
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
+*/
